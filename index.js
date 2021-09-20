@@ -14,6 +14,9 @@ app.use(cors());
 
 const port = 5000
 
+app.get('/', (req, res)=>{
+  res.send('working')
+})
 
 
 MongoClient.connect(uri, function(err, client) {
